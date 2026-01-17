@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Vigneshwar</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css" />
 </head>
+
 <body>
 
     <!-- <div class="loader">
@@ -47,15 +50,30 @@
                         Developer
                     </h1>
                     <p class="desc">
-                        Hi! I'm <span>Vigneshwar</span>. A creative Frontend Developer with 7+ years of experience in building high-performance, scalable, and responsive web solutions.
+                        Hi! I'm <span>Vigneshwar</span>. A creative Frontend Developer with 7+ years of experience in
+                        building high-performance, scalable, and responsive web solutions.
                     </p>
                 </div>
                 <div class="banner-right">
-                    <div class="banner-card">
-                        <img src="./images/user.png" alt="hero">
+
+                    <!-- main Atropos container (required), add your custom class here -->
+                    <div class="atropos my-atropos">
+                        <!-- scale container (required) -->
+                        <div class="atropos-scale">
+                            <!-- rotate container (required) -->
+                            <div class="atropos-rotate">
+                                <!-- inner container (required) -->
+                                <div class="atropos-inner">
+                                    <div class="banner-card">
+                                        <img data-atropos-offset="-4" src="./images/user.png" alt="hero">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 
@@ -67,8 +85,11 @@
                     <h2>Building Digital Experiences That Matter</h2>
                 </div>
                 <div class="about-right">
-                    <p>I'm a Senior Frontend Developer with 7+ years of experience crafting elegant, high-performance web applications. My passion lies in building intuitive interfaces that solve real-world problems through clean code, thoughtful design, and accessibility-first principles.</p>
-                    <p>From startups to enterprise-scale applications, I've worked on projects that impact millions of users globally. Specialized in React, TypeScript, and modern web standards.</p>
+                    <p>I'm a Senior Frontend Developer with 7+ years of experience crafting elegant, high-performance
+                        web applications. My passion lies in building intuitive interfaces that solve real-world
+                        problems through clean code, thoughtful design, and accessibility-first principles.</p>
+                    <p>From startups to enterprise-scale applications, I've worked on projects that impact millions of
+                        users globally. Specialized in React, TypeScript, and modern web standards.</p>
                     <a href="#" class="about-btn">View my work</a>
                 </div>
             </div>
@@ -340,6 +361,7 @@
             <p>© 2025 Vigneshwar. All rights reserved.</p>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
+
 </html>

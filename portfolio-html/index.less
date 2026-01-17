@@ -179,10 +179,20 @@ p {
     .banner-right {
       width: 350px;
 
+      .atropos-inner{
+        border-radius: 20px;
+      }
+      .atropos-highlight{
+        opacity: 0.2 !important;
+      }
+      .atropos-shadow{
+        background: rgba(0,0,0,0.1);
+      }
+
       .banner-card {
         overflow: hidden;
         border-radius: 20px;
-        box-shadow: 10px 20px 50px rgb(255 143 0 / 11%);
+        // box-shadow: 10px 20px 50px rgb(255 143 0 / 11%);
         transition: 0.3s;
 
         img {
@@ -192,6 +202,7 @@ p {
           object-fit: cover;
           object-position: top;
           display: block;
+          border-radius: 20px;
         }
       }
 
