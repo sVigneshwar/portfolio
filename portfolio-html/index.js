@@ -11,9 +11,68 @@ $(document).ready(function() {
       $('.loader').remove();
     }, 1000);
   }, 1300);
+
+  // Project Hover Effects
+  const imageBox = $('.projects-image-box');
+  const previewImage = $('.project-preview-image');
+  let animationId = null;
+
+  function moveImageBox(targetTop) {
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+    }
+
+    const animate = () => {
+      const currentTop = parseFloat(imageBox.css('top'));
+      const diff = targetTop - currentTop;
+
+      if (Math.abs(diff) > 0.5) {
+        imageBox.css('top', (currentTop + diff * 0.12) + 'px');
+        animationId = requestAnimationFrame(animate);
+      } else {
+        imageBox.css('top', targetTop + 'px');
+      }
+    };
+
+    animationId = requestAnimationFrame(animate);
+  }
+
+  $(document).on('mouseenter', '.project-item', function() {
+    if ($(window).width() < 1200) return;
+
+    const imageUrl = $(this).data('image');
+    const itemTop = $(this).offset().top - $(window).scrollTop();
+    
+    // Preload and display the image
+    const img = new Image();
+    img.onload = function() {
+      previewImage.attr('src', imageUrl);
+      imageBox.css('opacity', 1);
+      previewImage.css('opacity', 1);
+    };
+    img.onerror = function() {
+      previewImage.css('opacity', 0);
+    };
+    img.src = imageUrl;
+
+    // Move box to align with item
+    moveImageBox(itemTop);
+  });
+
+  $(document).on('mouseleave', '.projects-list', function() {
+    if ($(window).width() < 1200) return;
+
+    imageBox.css('opacity', 0);
+    previewImage.css('opacity', 0);
+  });
+
+  // Handle window resize
+  $(window).on('resize', function() {
+    if ($(window).width() < 1200) {
+      imageBox.css('opacity', 0);
+    }
+  });
 });
-
-
 
 const myAtropos = Atropos({
   el: '.my-atropos',
