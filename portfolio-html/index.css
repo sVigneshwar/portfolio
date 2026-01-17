@@ -240,9 +240,6 @@ body {
   transform-origin: left;
   transform: scaleX(1);
 }
-.skill-section {
-  padding: 80px 0;
-}
 p.desc-title {
   color: #ff8f00;
   text-transform: uppercase;
@@ -269,21 +266,124 @@ p.desc-title img {
     transform: rotate(360deg);
   }
 }
-.skill-items ul {
+.skill-section {
+  padding: 80px 0;
+}
+.skill-section .skill-group {
+  margin-top: 30px;
+}
+.skill-section .skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+.skill-section .skill-row:nth-child(2) {
+  align-items: center;
+}
+.skill-section .skill-row:last-child {
+  margin-bottom: 0;
+}
+.skill-section .skill-tech {
+  width: 500px;
+}
+.skill-section .skill-tech h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #b7b7b7;
+}
+.skill-section .skill-items {
+  width: calc(100% - 500px);
+}
+.skill-section .skill-items ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.skill-items ul li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.skill-section .skill-items ul li {
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  margin: 15px 45px 15px 0;
   color: #dedede;
-  margin-bottom: 10px;
 }
-.skill-icon {
-  width: 24px;
-  height: 24px;
+.skill-section .skill-items ul .skill-icon {
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-right: 12px;
+}
+.exp-section {
+  padding: 80px 0;
+}
+.exp-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+}
+.exp-section ul li {
+  margin-bottom: 60px;
+}
+.exp-section ul li:last-child {
+  margin-bottom: 0;
+}
+.exp-section ul li p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.exp-section ul li h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 1;
+  margin-bottom: 19px;
+}
+.exp-section ul li span {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  color: #dedede;
+}
+.project-section {
+  display: none;
+}
+.contact-section {
+  text-align: center;
+  padding: 80px 0;
+}
+.contact-section p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.contact-section a.contact-email {
+  text-align: center;
+  color: #dedede;
+  font-size: 36px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.contact-section a.contact-email:hover {
+  text-decoration: underline;
+}
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-section ul li {
+  display: inline-block;
+  margin: 0 7px;
+}
+.contact-section ul img {
+  width: 30px;
+}
+.copyright-section {
+  background: #1e1e1e;
+  padding: 12px 0;
+  text-align: center;
+}
+.copyright-section p {
+  font-size: 14px;
 }

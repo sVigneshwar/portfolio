@@ -290,11 +290,6 @@ body {
 // about section end
 
 // skill section start
-
-.skill-section {
-  padding: 80px 0;
-}
-
 p.desc-title {
   color: #ff8f00;
   text-transform: uppercase;
@@ -303,7 +298,8 @@ p.desc-title {
   font-weight: 6;
   display: block;
   margin-bottom: 5px;
-   img {
+
+  img {
     width: 24px;
     vertical-align: middle;
     margin-top: -4px;
@@ -311,46 +307,185 @@ p.desc-title {
     display: inline-block;
     transform-origin: center;
     animation: slow-rotate 6s linear infinite;
-}
+  }
 
 }
 
 @keyframes slow-rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skill-section {
+  padding: 80px 0;
+
+  .skill-group {
+    margin-top: 30px;
+  }
+
+  .skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+
+    &:nth-child(2) {
+      align-items: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .skill-tech {
+    width: 500px;
+
+    h2 {
+      font-size: 50px;
+      text-transform: uppercase;
+      color: #b7b7b7;
+    }
+  }
+
+  .skill-items {
+    width: calc(100% - 500px);
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        font-size: 24px;
+        position: relative;
+        margin: 15px 45px 15px 0;
+        color: rgb(222 222 222);
+      }
+
+      .skill-icon {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -1px;
+        margin-right: 12px;
+      }
+
+    }
+  }
+
 }
 
 // skill section end
 
-.skill-items ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-items ul li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: rgb(222 222 222);
-  margin-bottom: 10px;
-}
-
-.skill-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  display: inline-block;
-}
-
 // exp section start
+
+.exp-section {
+  padding: 80px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+
+    li {
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        line-height: 1;
+        margin-bottom: 19px;
+      }
+
+      span {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+        color: #dedede;
+      }
+    }
+  }
+}
+
 // exp section end
 
 // project section start
+.project-section {
+  display: none;
+}
+
 // project section end
 
 // contact section start
+.contact-section {
+  text-align: center;
+  padding: 80px 0;
+
+  p {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  a.contact-email {
+    text-align: center;
+    color: #dedede;
+    font-size: 36px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 7px;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+
+}
+
+
 // contact section end
 
 // copyright section start
+.copyright-section {
+  background: #1e1e1e;
+  padding: 12px 0;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+  }
+}
+
 // copyright section end
