@@ -15,7 +15,15 @@ $(document).ready(function() {
   // Project Hover Effects
   const imageBox = $('.projects-image-box');
   const previewImage = $('.project-preview-image');
+  const projectsList = $('.projects-list');
   let animationId = null;
+
+  function isProjectsSectionInView() {
+    if (projectsList.length === 0) return false;
+    
+    const rect = projectsList[0].getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
 
   function moveImageBox(targetTop) {
     if (animationId) {
@@ -39,6 +47,7 @@ $(document).ready(function() {
 
   $(document).on('mouseenter', '.project-item', function() {
     if ($(window).width() < 1200) return;
+    if (!isProjectsSectionInView()) return;
 
     const imageUrl = $(this).data('image');
     const itemTop = $(this).offset().top - $(window).scrollTop();
@@ -64,6 +73,16 @@ $(document).ready(function() {
 
     imageBox.css('opacity', 0);
     previewImage.css('opacity', 0);
+  });
+
+  // Hide image box when scrolling out of view
+  $(window).on('scroll', function() {
+    if ($(window).width() < 1200) return;
+
+    if (!isProjectsSectionInView()) {
+      imageBox.css('opacity', 0);
+      previewImage.css('opacity', 0);
+    }
   });
 
   // Handle window resize
