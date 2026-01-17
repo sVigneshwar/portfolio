@@ -25,15 +25,8 @@ $(document).ready(function() {
     
     if ($target.length === 0) return;
 
-    // Use GSAP to scroll smoothly
-    gsap.to(window, {
-      scrollTo: {
-        y: $target.offset().top - 80,
-        autoKill: true
-      },
-      duration: 1,
-      ease: 'power2.inOut'
-    });
+    // Use GSAP ScrollSmoother to scroll smoothly
+    ScrollSmoother.get().scrollTo('#' + sectionId, true, 'top-=0');
   });
 
   // Wait for all animations to complete (last letter at 0.4s + 0.4s animation + 0.5s pause)

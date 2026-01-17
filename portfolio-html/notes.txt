@@ -133,7 +133,7 @@ pending:
 custom arrow pointer for mouse
 scroll mouse below icon in banner section
 particle
-loader show
+loader same as reference website, fade the black in rectangle boxes
 responsive
 
 host websites
