@@ -345,8 +345,115 @@ p.desc-title img {
   display: block;
   color: #dedede;
 }
-.project-section {
-  display: none;
+.project-section ul.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -15px;
+  padding: 0;
+}
+.project-section ul.project-cards li {
+  width: 33.333%;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+.project-section ul.project-cards li a {
+  display: block;
+  position: relative;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.project-section ul.project-cards li a:hover .visit-text {
+  background: #ff8f00;
+}
+.project-section ul.project-cards li .card-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px 25px;
+  margin-top: 250px;
+  background: #000000;
+  height: 250px;
+}
+.project-section ul.project-cards li .card-content p {
+  line-height: 1.4;
+  font-size: 15px;
+}
+.project-section ul.project-cards li .card-content h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.project-section ul.project-cards li .card-content .visit-text {
+  color: #000;
+  font-family: "Anton", sans-serif;
+  font-size: 17px;
+  background: #ebebeb;
+  display: block;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  border-radius: 50px;
+  text-align: center;
+  bottom: 25px;
+  padding: 6px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.project-section ul.project-cards li .card-content .tags {
+  margin-top: 12px;
+}
+.project-section ul.project-cards li .card-content .tags span {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 4px 10px;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 50px;
+  margin-right: 8px;
+  color: #000;
+}
+.project-section ul.project-cards li .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 0;
+  background: #3e3e3e;
+  background-size: cover;
+  background-position: center top;
+}
+.project-section ul.project-cards li .img1 {
+  background-image: url("images/web/singgin.png");
+}
+.project-section ul.project-cards li .img2 {
+  background-image: url("images/web/harrogatespring.png");
+}
+.project-section ul.project-cards li .img3 {
+  background-image: url("images/web/adelphi.png");
+}
+.project-section ul.project-cards li .img4 {
+  background-image: url("images/web/zoho.png");
+}
+.project-section ul.project-cards li .img5 {
+  background-image: url("images/web/academy.png");
+}
+.project-section ul.project-cards li .img6 {
+  background-image: url("images/web/zohoinspire2023.png");
+}
+.project-section ul.project-cards li .img7 {
+  background-image: url("images/web/zoholicsjapan2022.png");
+}
+.project-section ul.project-cards li .img8 {
+  background-image: url("images/web/movie.png");
+}
+.project-section ul.project-cards li .img9 {
+  background-image: url("images/web/product-search.png");
+}
+.project-section ul.project-cards li .img10 {
+  background-image: url("images/web/cart.png");
 }
 .contact-section {
   text-align: center;
