@@ -127,3 +127,9 @@ GitHub (icon alone):
   https://github.com/sVigneshwar
 
 ================================================================================
+
+
+pending:
+particle
+loader show
+responsive

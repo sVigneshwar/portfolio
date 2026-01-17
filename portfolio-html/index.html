@@ -7,12 +7,20 @@
     <title>Portfolio - Vigneshwar</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css" />
 </head>
 
 <body>
 
-    <!-- <div class="loader">
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!--- ALL YOUR CONTENT HERE --->
+
+
+            <!-- <div class="loader">
         <span>V</span>
         <span>I</span>
         <span>C</span>
@@ -20,356 +28,388 @@
         <span>Y</span>
     </div> -->
 
-    <div class="navbar">
-        <span class="ham"></span>
-        <div class="sidebar">
-            <div class="sidebar-inner">
-                <span class="close"></span>
-                <div class="sidebar-content">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Projects</a></li>
-                    </ul>
-                </div>
-                <div class="sidebar-footer">
-                    <p>Get in Touch</p>
-                    <a href="mailto:vigneshwar.s1996@gmail.com">vigneshwar.s1996@gmail.com</a>
+            <div class="navbar">
+                <span class="ham"></span>
+                <div class="sidebar">
+                    <div class="sidebar-inner">
+                        <span class="close"></span>
+                        <div class="sidebar-content">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Skills</a></li>
+                                <li><a href="#">Experience</a></li>
+                                <li><a href="#">Projects</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-footer">
+                            <p>Get in Touch</p>
+                            <a href="mailto:vigneshwar.s1996@gmail.com">vigneshwar.s1996@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="banner-section">
-        <div class="container">
-            <div class="banner-main">
-                <div class="banner-left">
-                    <h1>
-                        <span>FRONTEND</span>
-                        Developer
-                    </h1>
-                    <p class="desc">
-                        Hi! I'm <span>Vigneshwar</span>. A creative Frontend Developer with 7+ years of experience in
-                        building high-performance, scalable, and responsive web solutions.
-                    </p>
-                </div>
-                <div class="banner-right">
+            <div class="banner-section">
+                <div class="container">
+                    <div class="banner-main">
+                        <div class="banner-left">
+                            <h1>
+                                <span>FRONTEND</span>
+                                Developer
+                            </h1>
+                            <p class="desc">
+                                Hi! I'm <span>Vigneshwar</span>. A creative Frontend Developer with 7+ years of
+                                experience in
+                                building high-performance, scalable, and responsive web solutions.
+                            </p>
+                        </div>
+                        <div class="banner-right">
 
-                    <!-- main Atropos container (required), add your custom class here -->
-                    <div class="atropos my-atropos">
-                        <!-- scale container (required) -->
-                        <div class="atropos-scale">
-                            <!-- rotate container (required) -->
-                            <div class="atropos-rotate">
-                                <!-- inner container (required) -->
-                                <div class="atropos-inner">
-                                    <div class="banner-card">
-                                        <!-- data-atropos-offset="-4" -->
-                                        <img src="./images/user.png" alt="hero" width="500">
+                            <!-- main Atropos container (required), add your custom class here -->
+                            <div class="atropos my-atropos">
+                                <!-- scale container (required) -->
+                                <div class="atropos-scale">
+                                    <!-- rotate container (required) -->
+                                    <div class="atropos-rotate">
+                                        <!-- inner container (required) -->
+                                        <div class="atropos-inner">
+                                            <div class="banner-card">
+                                                <!-- data-atropos-offset="-4" -->
+                                                <img src="./images/user.png" alt="hero" width="500">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+                </div>
+            </div>
 
+            <div class="about-section">
+                <div class="container">
+                    <div class="about-main">
+                        <div class="about-left">
+                            <span class="anton">Behind the Code</span>
+                            <h2>Building Digital Experiences That Matter</h2>
+                        </div>
+                        <div class="about-right">
+                            <p>I'm a Senior Frontend Developer with 7+ years of experience crafting elegant,
+                                high-performance
+                                web applications. My passion lies in building intuitive interfaces that solve real-world
+                                problems through clean code, thoughtful design, and accessibility-first principles.</p>
+                            <p>From startups to enterprise-scale applications, I've worked on projects that impact
+                                millions of
+                                users globally. Specialized in React, TypeScript, and modern web standards.</p>
+                            <a href="javascript:void(0)" class="about-btn anton" data-scroll-to="project-section">View
+                                my work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <div class="container">
+                    <p class="desc-title anton"><img src="./images/flower.png" alt="flower" width="10">My Stack</p>
+                    <div class="skill-group">
+                        <div class="skill-row">
+                            <div class="skill-tech">
+                                <h2>Frontend</h2>
+                            </div>
+                            <div class="skill-items">
+                                <ul>
+                                    <li><img class="skill-icon skill-react" src="./images/icons/react.png"
+                                            alt="React">React
+                                    </li>
+                                    <li><img class="skill-icon skill-js" src="./images/icons/js.png"
+                                            alt="JavaScript">JavaScript
+                                        (ES6+)</li>
+                                    <li><img class="skill-icon skill-ts" src="./images/icons/ts.png"
+                                            alt="TypeScript">TypeScript
+                                    </li>
+                                    <li><img class="skill-icon skill-redux" src="./images/icons/redux.png"
+                                            alt="Redux">Redux</li>
+                                    <li><img class="skill-icon skill-scss" src="./images/icons/sass.webp"
+                                            alt="SCSS">SCSS</li>
+                                    <li><img class="skill-icon skill-bootstrap" src="./images/icons/bootstrap.png"
+                                            alt="Bootstrap">Bootstrap</li>
+                                    <li><img class="skill-icon skill-webcomponent"
+                                            src="./images/icons/web-component.png" alt="Web Components">Web Components
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-tech">
+                                <h2>API & Testing</h2>
+                            </div>
+                            <div class="skill-items">
+                                <ul>
+                                    <li><img class="skill-icon skill-api" src="./images/icons/api.png"
+                                            alt="REST APIs">REST APIs
+                                    </li>
+                                    <li><img class="skill-icon skill-axios" src="./images/icons/axios.png"
+                                            alt="Axios">Axios
+                                    </li>
+                                    <li><img class="skill-icon skill-jwt" src="./images/icons/jwt.png" alt="JWT">JWT
+                                    </li>
+                                    <li><img class="skill-icon skill-jest" src="./images/icons/Jest.png" alt="Jest">Jest
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-tech">
+                                <h2>Tooling</h2>
+                            </div>
+                            <div class="skill-items">
+                                <ul>
+                                    <li><img class="skill-icon skill-vite" src="./images/icons/vite.png" alt="Vite">Vite
+                                    </li>
+                                    <li><img class="skill-icon skill-npm" src="./images/icons/npm.png" alt="npm">npm
+                                    </li>
+                                    <li><img class="skill-icon skill-git" src="./images/icons/git.png" alt="Git">Git
+                                    </li>
+                                    <li><img class="skill-icon skill-vscode" src="./images/icons/vsc.png"
+                                            alt="VS Code">VS Code
+                                    </li>
+                                    <li><img class="skill-icon skill-webstorm" src="./images/icons/webstorm.png"
+                                            alt="WebStorm">webstorm</li>
+                                    <li><img class="skill-icon skill-figma" src="./images/icons/figma.png"
+                                            alt="Figma">Figma
+                                    </li>
+                                    <li><img class="skill-icon skill-ps" src="./images/icons/ps.png"
+                                            alt="Photoshop">Photoshop
+                                    </li>
+                                    <li><img class="skill-icon skill-xd" src="./images/icons/xd.png" alt="XD">XD</li>
+                                    <li><img class="skill-icon skill-ill" src="./images/icons/ill.png"
+                                            alt="Illustrator">Illustrator</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-tech">
+                                <h2>AI Tools</h2>
+                            </div>
+                            <div class="skill-items">
+                                <ul>
+                                    <li><img class="skill-icon skill-chatgpt" src="./images/icons/chatgpt.png"
+                                            alt="ChatGPT">ChatGPT</li>
+                                    <li><img class="skill-icon skill-copilot" src="./images/icons/copilot.png"
+                                            alt="GitHub Copilot">GitHub Copilot</li>
+                                    <li><img class="skill-icon skill-cursor" src="./images/icons/cursor.png"
+                                            alt="Cursor">Cursor
+                                    </li>
+                                    <li><img class="skill-icon skill-claude" src="./images/icons/claude.png"
+                                            alt="Claude">Claude
+                                    </li>
+                                    <li><img class="skill-icon skill-gemini" src="./images/icons/gemini.png"
+                                            alt="Gemini">Gemini
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-section">
+                <div class="container">
+                    <p class="desc-title anton"><img src="./images/flower.png" alt="flower" width="10">My Experience</p>
+                    <ul>
+                        <li>
+                            <p>Zoho Corporation</p>
+                            <h2>Web Developer</h2>
+                            <span>Feb 2020 – Present</span>
+                        </li>
+                        <li>
+                            <p>K2B Solutions</p>
+                            <h2>UI Developer</h2>
+                            <span>Jan 2018 – Feb 2020</span>
+                        </li>
+                        <li>
+                            <p>Doodleblue Innovations</p>
+                            <h2>UI / UX Design Intern</h2>
+                            <span>Oct 2017 – Dec 2017</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-section" id="project-section">
+                <div class="container">
+                    <p class="desc-title anton"><img src="./images/flower.png" alt="flower" width="10">Selected Projects
+                    </p>
+
+                    <div class="projects-wrapper">
+                        <div class="projects-list">
+                            <div class="projects-category">
+                                <h3>Professional Works</h3>
+                                <ul class="project-list">
+                                    <li class="project-item" data-image="./images/web/singgin.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/singgin.png" alt="Singgin">
+                                        </div>
+                                        <a href="https://www.singgin.com/" target="_blank"><span>01.</span> Singgin</a>
+                                        <div class="tags">
+                                            <span>Performance</span>
+                                            <span>Responsive</span>
+                                            <span>Marketing</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/harrogatespring.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/harrogatespring.png" alt="Harrogate Spring">
+                                        </div>
+                                        <a href="https://www.harrogatespring.com/" target="_blank"><span>02.</span>
+                                            Harrogate
+                                            Spring</a>
+                                        <div class="tags">
+                                            <span>Accessibility</span>
+                                            <span>Branding</span>
+                                            <span>Frontend</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/adelphi.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/adelphi.png" alt="Adelphi Selection">
+                                        </div>
+                                        <a href="https://www.awwwards.com/sites/adelphi-selection"
+                                            target="_blank"><span>03.</span> Adelphi Selection</a>
+                                        <div class="tags">
+                                            <span>Award-winning</span>
+                                            <span>Design</span>
+                                            <span>Featured</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/zoho.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/zoho.png" alt="Zoho Japan">
+                                        </div>
+                                        <a href="https://www.zoho.com/jp/" target="_blank"><span>04.</span> Zoho
+                                            Japan</a>
+                                        <div class="tags">
+                                            <span>Enterprise</span>
+                                            <span>Localization</span>
+                                            <span>High-traffic</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/academy.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/academy.png" alt="Zoho Japan - CRM Academy">
+                                        </div>
+                                        <a href="https://www.zoho.com/jp/crm/academy/" target="_blank"><span>05.</span>
+                                            Zoho
+                                            Japan - CRM Academy</a>
+                                        <div class="tags">
+                                            <span>Educational</span>
+                                            <span>CRM</span>
+                                            <span>Resources</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/zohoinspire2023.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/zohoinspire2023.png" alt="Zoho Japan - Inspire 2023">
+                                        </div>
+                                        <a href="https://www.zoho.com/jp/zohoinspire2023/"
+                                            target="_blank"><span>06.</span> Zoho
+                                            Japan - Inspire 2023</a>
+                                        <div class="tags">
+                                            <span>Event</span>
+                                            <span>Microsite</span>
+                                            <span>Conference</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/zoholicsjapan2022.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/zoholicsjapan2022.png"
+                                                alt="Zoho Japan - Zoholics 2022">
+                                        </div>
+                                        <a href="https://www.zoho.com/jp/zoholicsjapan2022/"
+                                            target="_blank"><span>07.</span>
+                                            Zoho Japan - Zoholics 2022</a>
+                                        <div class="tags">
+                                            <span>Event</span>
+                                            <span>Responsive</span>
+                                            <span>High-traffic</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="projects-category">
+                                <h3>Personal Works</h3>
+                                <ul class="project-list">
+                                    <li class="project-item" data-image="./images/web/movie.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/movie.png" alt="Movie App">
+                                        </div>
+                                        <a href="https://svigneshwar.github.io/Movie-App/"
+                                            target="_blank"><span>08.</span>
+                                            Flixhub</a>
+                                        <div class="tags">
+                                            <span>React</span>
+                                            <span>Vite</span>
+                                            <span>TMDB API</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/product-search.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/product-search.png"
+                                                alt="Simple Product Search Filter">
+                                        </div>
+                                        <a href="https://svigneshwar.github.io/Simple-product-search-filter/"
+                                            target="_blank"><span>09.</span> Product Filter</a>
+                                        <div class="tags">
+                                            <span>React</span>
+                                            <span>Vite</span>
+                                            <span>Store API</span>
+                                        </div>
+                                    </li>
+                                    <li class="project-item" data-image="./images/web/cart.png">
+                                        <div class="project-item-image">
+                                            <img src="./images/web/cart.png" alt="Shopping Cart">
+                                        </div>
+                                        <a href="https://svigneshwar.github.io/shopping-cart/"
+                                            target="_blank"><span>10.</span>
+                                            Shopping Cart</a>
+                                        <div class="tags">
+                                            <span>React</span>
+                                            <span>Vite</span>
+                                            <span>State Management</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="container">
+                    <p>Want to Connect?</p>
+                    <a href="mailto:vigneshwar.s1996@gmail.com"
+                        class="contact-email anton">vigneshwar.s1996@gmail.com</a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/vigneshwar-s-966676142/" target="_blank"><img
+                                    src="./images/icons/linkedin.png" alt="linkedin"></a></li>
+                        <li><a href="https://github.com/sVigneshwar" target="_blank"><img
+                                    src="./images/icons/github.png" alt="github"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright-section">
+                <div class="container">
+                    <p>© 2026 Vigneshwar. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="about-section">
-        <div class="container">
-            <div class="about-main">
-                <div class="about-left">
-                    <span class="anton">Behind the Code</span>
-                    <h2>Building Digital Experiences That Matter</h2>
-                </div>
-                <div class="about-right">
-                    <p>I'm a Senior Frontend Developer with 7+ years of experience crafting elegant, high-performance
-                        web applications. My passion lies in building intuitive interfaces that solve real-world
-                        problems through clean code, thoughtful design, and accessibility-first principles.</p>
-                    <p>From startups to enterprise-scale applications, I've worked on projects that impact millions of
-                        users globally. Specialized in React, TypeScript, and modern web standards.</p>
-                    <a href="#project-section" class="about-btn anton">View my work</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="skill-section">
-        <div class="container">
-            <p class="desc-title anton"><img src="./images/flower.png" alt="flower" width="10">My Stack</p>
-            <div class="skill-group">
-                <div class="skill-row">
-                    <div class="skill-tech">
-                        <h2>Frontend</h2>
-                    </div>
-                    <div class="skill-items">
-                        <ul>
-                            <li><img class="skill-icon skill-react" src="./images/icons/react.png" alt="React">React
-                            </li>
-                            <li><img class="skill-icon skill-js" src="./images/icons/js.png" alt="JavaScript">JavaScript
-                                (ES6+)</li>
-                            <li><img class="skill-icon skill-ts" src="./images/icons/ts.png" alt="TypeScript">TypeScript
-                            </li>
-                            <li><img class="skill-icon skill-redux" src="./images/icons/redux.png" alt="Redux">Redux</li>
-                            <li><img class="skill-icon skill-scss" src="./images/icons/sass.webp" alt="SCSS">SCSS</li>
-                            <li><img class="skill-icon skill-bootstrap" src="./images/icons/bootstrap.png"
-                                    alt="Bootstrap">Bootstrap</li>
-                            <li><img class="skill-icon skill-webcomponent" src="./images/icons/web-component.png"
-                                    alt="Web Components">Web Components</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-tech">
-                        <h2>API & Testing</h2>
-                    </div>
-                    <div class="skill-items">
-                        <ul>
-                            <li><img class="skill-icon skill-api" src="./images/icons/api.png" alt="REST APIs">REST APIs
-                            </li>
-                            <li><img class="skill-icon skill-axios" src="./images/icons/axios.png" alt="Axios">Axios
-                            </li>
-                            <li><img class="skill-icon skill-jwt" src="./images/icons/jwt.png" alt="JWT">JWT</li>
-                            <li><img class="skill-icon skill-jest" src="./images/icons/Jest.png" alt="Jest">Jest</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-tech">
-                        <h2>Tooling</h2>
-                    </div>
-                    <div class="skill-items">
-                        <ul>
-                            <li><img class="skill-icon skill-vite" src="./images/icons/vite.png" alt="Vite">Vite</li>
-                            <li><img class="skill-icon skill-npm" src="./images/icons/npm.png" alt="npm">npm</li>
-                            <li><img class="skill-icon skill-git" src="./images/icons/git.png" alt="Git">Git</li>
-                            <li><img class="skill-icon skill-vscode" src="./images/icons/vsc.png" alt="VS Code">VS Code
-                            </li>
-                            <li><img class="skill-icon skill-webstorm" src="./images/icons/webstorm.png"
-                                    alt="WebStorm">webstorm</li>
-                            <li><img class="skill-icon skill-figma" src="./images/icons/figma.png" alt="Figma">Figma
-                            </li>
-                            <li><img class="skill-icon skill-ps" src="./images/icons/ps.png" alt="Photoshop">Photoshop
-                            </li>
-                            <li><img class="skill-icon skill-xd" src="./images/icons/xd.png" alt="XD">XD</li>
-                            <li><img class="skill-icon skill-ill" src="./images/icons/ill.png"
-                                    alt="Illustrator">Illustrator</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-tech">
-                        <h2>AI Tools</h2>
-                    </div>
-                    <div class="skill-items">
-                        <ul>
-                            <li><img class="skill-icon skill-chatgpt" src="./images/icons/chatgpt.png"
-                                    alt="ChatGPT">ChatGPT</li>
-                            <li><img class="skill-icon skill-copilot" src="./images/icons/copilot.png"
-                                    alt="GitHub Copilot">GitHub Copilot</li>
-                            <li><img class="skill-icon skill-cursor" src="./images/icons/cursor.png" alt="Cursor">Cursor
-                            </li>
-                            <li><img class="skill-icon skill-claude" src="./images/icons/claude.png" alt="Claude">Claude
-                            </li>
-                            <li><img class="skill-icon skill-gemini" src="./images/icons/gemini.png" alt="Gemini">Gemini
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="exp-section">
-        <div class="container">
-            <p class="desc-title anton"><img src="./images/flower.png" alt="flower" width="10">My Experience</p>
-            <ul>
-                <li>
-                    <p>Zoho Corporation</p>
-                    <h2>Web Developer</h2>
-                    <span>Feb 2020 – Present</span>
-                </li>
-                <li>
-                    <p>K2B Solutions</p>
-                    <h2>UI Developer</h2>
-                    <span>Jan 2018 – Feb 2020</span>
-                </li>
-                <li>
-                    <p>Doodleblue Innovations</p>
-                    <h2>UI / UX Design Intern</h2>
-                    <span>Oct 2017 – Dec 2017</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="project-section" id="project-section">
-        <div class="container">
-            <p class="desc-title anton"><img src="./images/flower.png" alt="flower" width="10">Selected Projects</p>
-
-            <div class="projects-wrapper">
-                <div class="projects-list">
-                    <div class="projects-category">
-                        <h3>Professional Works</h3>
-                        <ul class="project-list">
-                            <li class="project-item" data-image="./images/web/singgin.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/singgin.png" alt="Singgin">
-                                </div>
-                                <a href="https://www.singgin.com/" target="_blank"><span>01.</span> Singgin</a>
-                                <div class="tags">
-                                    <span>Performance</span>
-                                    <span>Responsive</span>
-                                    <span>Marketing</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/harrogatespring.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/harrogatespring.png" alt="Harrogate Spring">
-                                </div>
-                                <a href="https://www.harrogatespring.com/" target="_blank"><span>02.</span> Harrogate
-                                    Spring</a>
-                                <div class="tags">
-                                    <span>Accessibility</span>
-                                    <span>Branding</span>
-                                    <span>Frontend</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/adelphi.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/adelphi.png" alt="Adelphi Selection">
-                                </div>
-                                <a href="https://www.awwwards.com/sites/adelphi-selection"
-                                    target="_blank"><span>03.</span> Adelphi Selection</a>
-                                <div class="tags">
-                                    <span>Award-winning</span>
-                                    <span>Design</span>
-                                    <span>Featured</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/zoho.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/zoho.png" alt="Zoho Japan">
-                                </div>
-                                <a href="https://www.zoho.com/jp/" target="_blank"><span>04.</span> Zoho Japan</a>
-                                <div class="tags">
-                                    <span>Enterprise</span>
-                                    <span>Localization</span>
-                                    <span>High-traffic</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/academy.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/academy.png" alt="Zoho Japan - CRM Academy">
-                                </div>
-                                <a href="https://www.zoho.com/jp/crm/academy/" target="_blank"><span>05.</span> Zoho
-                                    Japan - CRM Academy</a>
-                                <div class="tags">
-                                    <span>Educational</span>
-                                    <span>CRM</span>
-                                    <span>Resources</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/zohoinspire2023.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/zohoinspire2023.png" alt="Zoho Japan - Inspire 2023">
-                                </div>
-                                <a href="https://www.zoho.com/jp/zohoinspire2023/" target="_blank"><span>06.</span> Zoho
-                                    Japan - Inspire 2023</a>
-                                <div class="tags">
-                                    <span>Event</span>
-                                    <span>Microsite</span>
-                                    <span>Conference</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/zoholicsjapan2022.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/zoholicsjapan2022.png" alt="Zoho Japan - Zoholics 2022">
-                                </div>
-                                <a href="https://www.zoho.com/jp/zoholicsjapan2022/" target="_blank"><span>07.</span>
-                                    Zoho Japan - Zoholics 2022</a>
-                                <div class="tags">
-                                    <span>Event</span>
-                                    <span>Responsive</span>
-                                    <span>High-traffic</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="projects-category">
-                        <h3>Personal Works</h3>
-                        <ul class="project-list">
-                            <li class="project-item" data-image="./images/web/movie.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/movie.png" alt="Movie App">
-                                </div>
-                                <a href="https://svigneshwar.github.io/Movie-App/" target="_blank"><span>08.</span>
-                                    Flixhub</a>
-                                <div class="tags">
-                                    <span>React</span>
-                                    <span>Vite</span>
-                                    <span>TMDB API</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/product-search.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/product-search.png" alt="Simple Product Search Filter">
-                                </div>
-                                <a href="https://svigneshwar.github.io/Simple-product-search-filter/"
-                                    target="_blank"><span>09.</span> Product Filter</a>
-                                <div class="tags">
-                                    <span>React</span>
-                                    <span>Vite</span>
-                                    <span>Store API</span>
-                                </div>
-                            </li>
-                            <li class="project-item" data-image="./images/web/cart.png">
-                                <div class="project-item-image">
-                                    <img src="./images/web/cart.png" alt="Shopping Cart">
-                                </div>
-                                <a href="https://svigneshwar.github.io/shopping-cart/" target="_blank"><span>10.</span>
-                                    Shopping Cart</a>
-                                <div class="tags">
-                                    <span>React</span>
-                                    <span>Vite</span>
-                                    <span>State Management</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="projects-image-box">
-                    <img src="" alt="Project Preview" class="project-preview-image">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="contact-section">
-        <div class="container">
-            <p>Want to Connect?</p>
-            <a href="mailto:vigneshwar.s1996@gmail.com" class="contact-email anton">vigneshwar.s1996@gmail.com</a>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/vigneshwar-s-966676142/" target="_blank"><img
-                            src="./images/icons/linkedin.png" alt="linkedin"></a></li>
-                <li><a href="https://github.com/sVigneshwar" target="_blank"><img src="./images/icons/github.png"
-                            alt="github"></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="copyright-section">
-        <div class="container">
-            <p>© 2025 Vigneshwar. All rights reserved.</p>
-        </div>
+    <!-- Fixed position elements go outside the smooth wrapper -->
+    <div class="projects-image-box">
+        <img src="" alt="Project Preview" class="project-preview-image">
     </div>
     <script type="module" src="index.js"></script>
 </body>

@@ -2,6 +2,40 @@
 import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs';
 
 $(document).ready(function() {
+  // ========================================
+  // REGISTER GSAP PLUGINS & SETUP SMOOTH SCROLL
+  // ========================================
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  // Create smooth scroll effect
+  ScrollSmoother.create({
+    smooth: 3, // how long (in seconds) it takes to "catch up" to native scroll
+    effects: true, // looks for data-speed and data-lag attributes
+    smoothTouch: 0.1 // shorter smoothing on touch devices
+  });
+
+  // ========================================
+  // SMOOTH SCROLL TO SECTION
+  // ========================================
+  $(document).on('click', '[data-scroll-to]', function(e) {
+    e.preventDefault();
+    
+    const sectionId = $(this).data('scroll-to');
+    const $target = $('#' + sectionId);
+    
+    if ($target.length === 0) return;
+
+    // Use GSAP to scroll smoothly
+    gsap.to(window, {
+      scrollTo: {
+        y: $target.offset().top - 80,
+        autoKill: true
+      },
+      duration: 1,
+      ease: 'power2.inOut'
+    });
+  });
+
   // Wait for all animations to complete (last letter at 0.4s + 0.4s animation + 0.5s pause)
   setTimeout(function() {
     $('.loader').addClass('zoom-out');
@@ -13,8 +47,10 @@ $(document).ready(function() {
   }, 1300);
 
   // Project Hover Effects
-  const imageBox = $('.projects-image-box');
-  const previewImage = $('.project-preview-image');
+  // Note: Image box is positioned fixed OUTSIDE the smooth-content wrapper
+  // to work properly with GSAP ScrollSmoother
+  const imageBox = $('body > .projects-image-box'); // Select the fixed element outside wrapper
+  const previewImage = imageBox.find('.project-preview-image');
   const projectsList = $('.projects-list');
   let animationId = null;
 
