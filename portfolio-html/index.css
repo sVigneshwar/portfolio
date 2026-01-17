@@ -35,6 +35,24 @@ h1 span {
   font-weight: 400;
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: #dedede;
+}
+p {
+  font-size: 17px;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .loader {
   position: fixed;
   top: 0;
@@ -96,4 +114,62 @@ h1 span {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.navbar {
+  display: none;
+}
+.banner-section {
+  background-color: #212121;
+  color: #fff;
+}
+.banner-section .banner-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  padding: 100px 0;
+}
+.banner-section .banner-main .banner-left {
+  width: calc(100% - 300px);
+  max-width: 500px;
+}
+.banner-section .banner-main .banner-left h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #dedede;
+  margin-bottom: 20px;
+}
+.banner-section .banner-main .banner-left h1 span {
+  display: block;
+  position: relative;
+  left: -15px;
+  color: #ff8f00;
+}
+.banner-section .banner-main .banner-left p.desc {
+  line-height: 1.7;
+}
+.banner-section .banner-main .banner-left p.desc span {
+  font-weight: 500;
+  color: #fff;
+}
+.banner-section .banner-main .banner-right {
+  width: 350px;
+}
+.banner-section .banner-main .banner-right .banner-card {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 10px 20px 50px rgba(255, 143, 0, 0.11);
+  transition: 0.3s;
+}
+.banner-section .banner-main .banner-right .banner-card img {
+  max-width: 100%;
+  width: 100% ;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
