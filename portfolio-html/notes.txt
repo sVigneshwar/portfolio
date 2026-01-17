@@ -130,6 +130,11 @@ GitHub (icon alone):
 
 
 pending:
+custom arrow pointer for mouse
+scroll mouse below icon in banner section
 particle
 loader show
 responsive
+
+host websites
+host website in awwwards
