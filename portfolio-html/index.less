@@ -46,7 +46,8 @@ p {
   margin: 0 auto;
   padding: 0 20px;
 }
-body{
+
+body {
   background-color: #212121;
 }
 
@@ -215,12 +216,9 @@ body{
   }
 }
 
-
 // banner section end
 
 // about section start
-
-
 .about-section {
   padding: 80px 0;
 
@@ -263,7 +261,8 @@ body{
       text-transform: uppercase;
       text-decoration: none;
       position: relative;
-      &:before{
+
+      &:before {
         content: '';
         display: block;
         height: 2px;
@@ -276,11 +275,12 @@ body{
         transform: scaleX(0);
         transition: transform 0.3s ease;
       }
-      &:hover{
-        &:before{
+
+      &:hover {
+        &:before {
           transform-origin: left;
           transform: scaleX(1);
-        }        
+        }
       }
     }
   }
@@ -290,7 +290,58 @@ body{
 // about section end
 
 // skill section start
+
+.skill-section {
+  padding: 80px 0;
+}
+
+p.desc-title {
+  color: #ff8f00;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 6;
+  display: block;
+  margin-bottom: 5px;
+   img {
+    width: 24px;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 18px;
+    display: inline-block;
+    transform-origin: center;
+    animation: slow-rotate 6s linear infinite;
+}
+
+}
+
+@keyframes slow-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 // skill section end
+
+.skill-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-items ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(222 222 222);
+  margin-bottom: 10px;
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
+}
 
 // exp section start
 // exp section end
