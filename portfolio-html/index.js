@@ -70,6 +70,10 @@ $(document).ready(function() {
 
     // Use GSAP ScrollSmoother to scroll smoothly
     ScrollSmoother.get().scrollTo('#' + sectionId, true, 'top-=0');
+    setTimeout(() => {
+      $(".container").addClass("animated")
+    }, 600)
+    
   });
 
   // Wait for all animations to complete (last letter at 0.4s + 0.4s animation + 0.5s pause)

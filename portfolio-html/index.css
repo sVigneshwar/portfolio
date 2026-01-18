@@ -137,6 +137,7 @@ body.loading #smooth-wrapper {
 }
 .loader span:nth-child(1) {
   animation-delay: 0s;
+  color: #ff8f00;
 }
 .loader span:nth-child(2) {
   animation-delay: 0.1s;
