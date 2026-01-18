@@ -131,9 +131,9 @@ GitHub (icon alone):
 
 pending:
 custom arrow pointer for mouse
+zanim
 scroll mouse below icon in banner section
 particle
-loader same as reference website, fade the black in rectangle boxes
 responsive
 
 host websites

@@ -57,13 +57,20 @@ p {
 body {
   background-color: #212121;
 }
+body #smooth-wrapper {
+  transform: scale(1);
+  transition: 1s;
+}
+body.loading #smooth-wrapper {
+  transform: scale(0.95);
+}
 .loader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: #000;
+  height: 100vh;
+  background: #212121;
   color: #dedede;
   display: flex;
   justify-content: center;
@@ -72,16 +79,17 @@ body {
   opacity: 1;
   transform: scale(1);
   transition: all 0.4s ease-out;
+  text-transform: uppercase;
 }
 .loader.zoom-out {
   opacity: 0;
 }
 .loader span {
-  font-size: 200px;
+  font-size: 150px;
   margin: 0 3px;
   opacity: 0;
   transform: translateY(70px);
-  animation: fadeInUp 0.2s ease-out forwards;
+  animation: fadeInUp 1s ease-out forwards;
 }
 .loader span:nth-child(1) {
   animation-delay: 0s;
@@ -114,9 +122,21 @@ body {
   animation-delay: 0.9s;
 }
 @keyframes fadeInUp {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  25% {
     opacity: 1;
     transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70px);
   }
 }
 .navbar {
@@ -385,8 +405,11 @@ p.desc-title img {
 .projects-wrapper .projects-category .project-list .project-item:hover {
   opacity: 1 !important;
 }
-.projects-wrapper .projects-category .project-list .project-item:hover a {
+.projects-wrapper .projects-category .project-list .project-item:hover a .number {
   color: #ff8f00;
+}
+.projects-wrapper .projects-category .project-list .project-item:hover a .overlay .overlay-text {
+  width: 100%;
 }
 .projects-wrapper .projects-category .project-list .project-item:last-child {
   border-bottom: none;
@@ -416,10 +439,30 @@ p.desc-title img {
   left: 0;
   z-index: 1;
 }
-.projects-wrapper .projects-category .project-list .project-item a span {
+.projects-wrapper .projects-category .project-list .project-item a span.number {
   font-size: 14px;
   margin-right: 10px;
   vertical-align: top;
+  font-family: "Anton", sans-serif;
+  position: relative;
+}
+.projects-wrapper .projects-category .project-list .project-item a span.overlay {
+  font-family: "Anton", sans-serif;
+  position: relative;
+}
+.projects-wrapper .projects-category .project-list .project-item a span.overlay.fix-overlay {
+  padding-left: 0;
+}
+.projects-wrapper .projects-category .project-list .project-item a span.overlay .overlay-text {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 0;
+  white-space: nowrap;
+  color: #ff8f00;
+  overflow: hidden;
+  transition: 0.3s;
   font-family: "Anton", sans-serif;
 }
 .projects-wrapper .projects-category .project-list .project-item .tags {

@@ -3,6 +3,16 @@ import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs';
 
 $(document).ready(function() {
   // ========================================
+  // SETUP OVERLAY TEXT ELEMENTS
+  // ========================================
+  // Add dynamic overlay-text spans to each overlay element
+  $('.overlay').each(function() {
+    const text = $(this).text().trim();
+    $(this).html(text); // Clear and set text
+    $(this).append(`<span class="overlay-text">${text}</span>`);
+  });
+
+  // ========================================
   // REGISTER GSAP PLUGINS & SETUP SMOOTH SCROLL
   // ========================================
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -32,12 +42,14 @@ $(document).ready(function() {
   // Wait for all animations to complete (last letter at 0.4s + 0.4s animation + 0.5s pause)
   setTimeout(function() {
     $('.loader').addClass('zoom-out');
+    $('body').removeClass("loading")
     
     // Remove loader from DOM after zoom out completes
     setTimeout(function() {
       $('.loader').remove();
-    }, 1000);
-  }, 1300);
+      
+    }, 1200);
+  }, 1500);
 
   // Project Hover Effects
   // Note: Image box is positioned fixed OUTSIDE the smooth-content wrapper
