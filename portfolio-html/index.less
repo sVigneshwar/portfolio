@@ -1079,8 +1079,13 @@ p.desc-title {
 }
 
 @media (max-width: 991px) {
+  .loader span {
+    font-size: 100px;
+  }
+
   .banner-section .banner-main {
     padding: 60px 0;
+    display: block;
   }
 
   .banner-section .banner-main .banner-left {
@@ -1152,11 +1157,18 @@ p.desc-title {
 }
 
 @media (max-width: 767px) {
+  .loader span {
+    font-size: 70px;
+
+  }
+
   .banner-section .banner-main .banner-left h1 {
     text-align: center;
     font-size: 50px;
     padding-left: 16px;
     max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .banner-section .banner-main .banner-left h1 span {
@@ -1169,6 +1181,9 @@ p.desc-title {
 
   .banner-section .banner-main .banner-left p.desc {
     text-align: center;
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .banner-section .banner-main .banner-right {
@@ -1220,8 +1235,6 @@ p.desc-title {
   .project-section {
     padding: 50px 0;
   }
-
-  .projects-wrapper .projects-category .project-list .project-item {}
 
   .projects-wrapper .projects-category .project-list .project-item .project-item-image {
     position: relative;

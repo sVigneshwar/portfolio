@@ -213,10 +213,9 @@ $(window).scroll(function() {
 $(window).on("resize", function() {
   var a = $(this);
   if (a.outerWidth() > 767) {
-    jp_global.animation()
+    animation()
   }
 });
-
 
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
