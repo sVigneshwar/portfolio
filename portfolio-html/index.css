@@ -783,3 +783,205 @@ p.desc-title img {
   opacity: 1;
   transform: scale(1);
 }
+@media (max-width: 1199px) {
+  .loader span {
+    font-size: 150px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .banner-section .banner-main {
+    min-height: auto;
+  }
+  .about-section .about-left {
+    width: 500px;
+  }
+  .about-section .about-right {
+    width: calc(100% - 500px);
+  }
+  .skill-section .skill-tech {
+    width: 400px;
+  }
+  .skill-section .skill-items {
+    width: calc(100% - 400px);
+  }
+  body {
+    cursor: auto;
+  }
+  a {
+    cursor: auto;
+  }
+  .custom-cursor {
+    display: none !important;
+  }
+  .project-section {
+    margin-bottom: 0;
+  }
+  .projects-wrapper .projects-category .project-list .project-item .project-item-image {
+    position: absolute;
+    width: 110px;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    display: block;
+  }
+  .projects-wrapper .projects-category .project-list .project-item .project-item-image img {
+    width: 100%;
+    height: 100%;
+    object-position: center top;
+    object-fit: cover;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section .banner-main {
+    padding: 60px 0;
+  }
+  .banner-section .banner-main .banner-left {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  .banner-section .banner-main .banner-left h1 span {
+    display: inline;
+    left: 0;
+  }
+  .banner-section .banner-main .banner-left h1 {
+    font-size: 62px;
+  }
+  .banner-section .banner-main .banner-right {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .about-section {
+    padding: 60px 0;
+  }
+  .about-section .about-left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .about-section .about-right {
+    width: 100%;
+  }
+  .about-section .about-right p {
+    margin-bottom: 20px;
+  }
+  .skill-section {
+    padding: 60px 0;
+  }
+  .skill-section .skill-tech {
+    width: 100%;
+  }
+  .skill-section .skill-items {
+    width: 100%;
+  }
+  .skill-section .skill-tech h2 {
+    color: #dedede;
+    margin-bottom: 10px;
+  }
+  .exp-section {
+    padding: 60px 0;
+  }
+  .project-section {
+    padding: 60px 0;
+  }
+  .contact-section {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section .banner-main .banner-left h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-left: 16px;
+    max-width: 340px;
+  }
+  .banner-section .banner-main .banner-left h1 span {
+    left: -29px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .banner-section .banner-main .banner-left p.desc {
+    text-align: center;
+  }
+  .banner-section .banner-main .banner-right {
+    max-width: 300px;
+  }
+  .anim {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .banner-section .banner-main {
+    padding: 50px 0;
+  }
+  .about-section {
+    padding: 50px 0;
+  }
+  .skill-section {
+    padding: 50px 0;
+  }
+  .about-section .about-left h2 {
+    font-size: 34px;
+  }
+  .skill-section .skill-tech h2 {
+    font-size: 40px;
+  }
+  .skill-section .skill-items ul li {
+    font-size: 20px;
+  }
+  .skill-section .skill-items ul .skill-icon {
+    width: 35px;
+    height: 25px;
+  }
+  .exp-section {
+    padding: 50px 0;
+  }
+  .exp-section ul li h2 {
+    font-size: 40px;
+  }
+  .project-section {
+    padding: 50px 0;
+  }
+  .projects-wrapper .projects-category .project-list .project-item .project-item-image {
+    position: relative;
+    height: 290px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 360px;
+  }
+  .projects-wrapper .projects-list:hover .project-item {
+    opacity: 1;
+  }
+  .projects-wrapper .projects-category .project-list .project-item a span.overlay .overlay-text {
+    display: none;
+  }
+  .projects-wrapper .projects-category .project-list .project-item a {
+    font-size: 36px;
+    padding-left: 36px;
+  }
+  .projects-wrapper .projects-category .project-list .project-item a span.number {
+    position: absolute;
+    left: 0;
+  }
+  .contact-section a.contact-email {
+    font-size: 27px;
+  }
+}
+@media (max-width: 500px) {
+  .projects-wrapper .projects-category .project-list .project-item .project-item-image {
+    max-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .skill-section .skill-items ul li {
+    width: 100%;
+  }
+  .contact-section p {
+    font-size: 18px;
+  }
+  .contact-section a.contact-email {
+    font-size: 22px;
+  }
+}

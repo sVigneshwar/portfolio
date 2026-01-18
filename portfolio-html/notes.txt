@@ -136,7 +136,7 @@ hover effect prgress background color for each project name - completed
 scroll mouse below icon in banner section - not good in page
 zanim - completed
 particle - completed
-responsive
+responsive - completed
 
 host websites
 host website in awwwards
