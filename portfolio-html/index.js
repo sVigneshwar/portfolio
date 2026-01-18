@@ -1,6 +1,38 @@
 
 import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs';
 
+const customCursor = document.querySelector('.custom-cursor');
+let mouseX = 0;
+let mouseY = 0;
+let cursorX = 0;
+let cursorY = 0;
+
+// Track mouse position
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+// Smoothly animate cursor to mouse position
+function animateCursor() {
+  cursorX += (mouseX - cursorX) * 0.2; // Smooth factor
+  cursorY += (mouseY - cursorY) * 0.2;
+  customCursor.style.left = cursorX + 'px';
+  customCursor.style.top = cursorY + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+// Hide cursor when leaving window
+document.addEventListener('mouseleave', () => {
+  customCursor.style.opacity = '0';
+});
+
+// Show cursor when entering window
+document.addEventListener('mouseenter', () => {
+  customCursor.style.opacity = '0.8';
+});
+
 $(document).ready(function() {
   // ========================================
   // SETUP OVERLAY TEXT ELEMENTS
