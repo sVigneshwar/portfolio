@@ -134,10 +134,9 @@ custom arrow pointer for mouse completed
 loader design tweak - completed
 hover effect prgress background color for each project name - completed
 scroll mouse below icon in banner section - not good in page
-zanim
+zanim - completed
 particle
 responsive
-
 
 host websites
 host website in awwwards

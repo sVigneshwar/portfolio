@@ -34,6 +34,7 @@ document.addEventListener('mouseenter', () => {
 });
 
 $(document).ready(function() {
+
   // ========================================
   // SETUP OVERLAY TEXT ELEMENTS
   // ========================================
@@ -172,3 +173,46 @@ const myAtropos = Atropos({
   shadowScale: 1.05,
   // rest of parameters
 });
+
+$.fn.visible = function(a) {
+	var e = $(this),
+		t = $(window),
+		s = t.scrollTop(),
+		r = s + t.height(),
+		i = e.offset().top,
+		o = i + e.height(),
+		l = a ? o : i,
+		c = a ? i : o;
+	return c <= r && l >= s
+};
+$.fn.isInViewport = function(a = 0) {
+	var e = $(this).offset().top;
+	var t = e + $(this).outerHeight();
+	var s = $(window).scrollTop();
+	var r = s + $(window).height();
+	return t > s + a && e < r - a
+};
+
+function animation(){
+  var a = $(".anim:not(.animated)");
+  if ($(window).outerWidth() > 767 && a.length > 0) {
+    $(a).each(function() {
+      var a = $(this);
+      if (a.visible(true) && a.isInViewport(30)) {
+        a.addClass("animated")
+      }
+    })
+  }
+}
+
+animation();
+$(window).scroll(function() {
+  animation()
+});
+$(window).on("resize", function() {
+  var a = $(this);
+  if (a.outerWidth() > 767) {
+    jp_global.animation()
+  }
+});
+
