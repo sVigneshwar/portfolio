@@ -88,6 +88,9 @@ body #smooth-wrapper {
   right: 0;
   bottom: 0;
 }
+.orange {
+  color: #ff8f00;
+}
 .fixed-mail {
   color: #dedede;
   text-decoration: none;
@@ -219,7 +222,7 @@ body.loading #smooth-wrapper {
 }
 .banner-section .banner-main .banner-left p.desc span {
   font-weight: 500;
-  color: #fff;
+  color: #ff8f00;
 }
 .banner-section .banner-main .banner-right {
   width: 350px;
@@ -402,7 +405,7 @@ p.desc-title img {
   line-height: 1;
   margin-bottom: 19px;
 }
-.exp-section ul li span {
+.exp-section ul li > span {
   font-size: 16px;
   margin-bottom: 10px;
   display: block;
