@@ -81,6 +81,13 @@ body #smooth-wrapper {
   transition: opacity 0.2s ease;
   border: 1px solid #b86700;
 }
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 body.loading #smooth-wrapper {
   transform: scale(0.95);
 }
@@ -221,6 +228,7 @@ body.loading #smooth-wrapper {
 }
 .banner-section .banner-main .banner-right .atropos-shadow {
   background: rgba(0, 0, 0, 0.04);
+  opacity: 0 !important;
 }
 .banner-section .banner-main .banner-right .banner-card {
   overflow: hidden;

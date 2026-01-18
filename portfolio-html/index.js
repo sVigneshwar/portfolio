@@ -169,8 +169,9 @@ $(document).ready(function() {
 
 const myAtropos = Atropos({
   el: '.my-atropos',
-  activeOffset: 40,
-  shadowScale: 1.05,
+  activeOffset: 50,
+  shadowScale: 0.35,
+  duration: 700
   // rest of parameters
 });
 
@@ -216,3 +217,7 @@ $(window).on("resize", function() {
   }
 });
 
+
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
