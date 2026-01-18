@@ -88,6 +88,20 @@ body #smooth-wrapper {
   right: 0;
   bottom: 0;
 }
+.fixed-mail {
+  color: #dedede;
+  text-decoration: none;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  bottom: 220px;
+  transform: rotate(90deg) translateY(85px);
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.fixed-mail:hover {
+  color: #ff8f00;
+}
 body.loading #smooth-wrapper {
   transform: scale(0.95);
 }
@@ -112,7 +126,7 @@ body.loading #smooth-wrapper {
   opacity: 0;
 }
 .loader span {
-  font-size: 150px;
+  font-size: 200px;
   margin: 0 3px;
   opacity: 0;
   transform: translateY(70px);
@@ -164,16 +178,6 @@ body.loading #smooth-wrapper {
   100% {
     opacity: 0;
     transform: translateY(-70px);
-  }
-}
-@keyframes scroll-wheel {
-  0% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(12px);
   }
 }
 .navbar {

@@ -87,6 +87,21 @@ body {
   bottom: 0;
 }
 
+.fixed-mail {
+  color: #dedede;
+  text-decoration: none;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  bottom: 220px;
+  transform: rotate(90deg) translateY(85px);
+  transition: 0.3s;
+  opacity: 0.5;
+  &:hover{
+    color: #ff8f00;
+  }
+}
+
 body.loading {
 
   #smooth-wrapper {
@@ -119,7 +134,7 @@ body.loading {
   }
 
   span {
-    font-size: 150px;
+    font-size: 200px;
     margin: 0 3px;
     opacity: 0;
     transform: translateY(70px);
@@ -188,66 +203,18 @@ body.loading {
     transform: translateY(-70px);
   }
 }
-
-@keyframes scroll-wheel {
-  0% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(12px);
-  }
-}
-
 // loader section end
 
 // nav section start
 .navbar {
   display: none;
 }
-
 // nav section end
 
 // banner section start
 .banner-section {
   color: #fff;
   position: relative;
-
-  // .scroll-indicator {
-  //   position: absolute;
-  //   bottom: 20px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   gap: 15px;
-  //   opacity: 0.6;
-
-  //   .mouse {
-  //     width: 26px;
-  //     height: 40px;
-  //     border: 2px solid #ff8f00;
-  //     border-radius: 13px;
-  //     position: relative;
-  //     opacity: 0.7;
-  //     transition: opacity 0.3s ease;
-
-  //     .wheel {
-  //       width: 4px;
-  //       height: 8px;
-  //       background: #ff8f00;
-  //       border-radius: 2px;
-  //       position: absolute;
-  //       top: 8px;
-  //       left: 50%;
-  //       transform: translateX(-50%);
-  //       animation: scroll-wheel 1.5s infinite;
-  //     }
-  //   }
-  // }
 
   .banner-main {
     display: flex;
@@ -913,3 +880,14 @@ p.desc-title {
   }
 }
 // anim end
+
+
+
+// responsive start
+@media (max-width: 1440px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){}
+@media (max-width: 991px){}
+@media (max-width: 767px){}
+@media (max-width: 400px){}
+// responsive end
