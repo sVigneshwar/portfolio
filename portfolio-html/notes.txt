@@ -138,5 +138,5 @@ zanim - completed
 particle - completed
 responsive - completed
 
-host websites
+host websites - completed
 host website in awwwards

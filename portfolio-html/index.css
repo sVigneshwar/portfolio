@@ -921,6 +921,7 @@ p.desc-title img {
   }
   .banner-section .banner-main .banner-right {
     max-width: 300px;
+    pointer-events: none;
   }
   .anim {
     opacity: 1 !important;
