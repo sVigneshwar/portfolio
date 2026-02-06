@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Meera ❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5f9e, #ff8fb1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .card {
+    max-width: 360px;
+    animation: fade 0.6s ease;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  .hint {
+    margin-top: 24px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+</style>
+</head>
+
+<body onclick="next()">
+
+<div class="card" id="content">
+  <h1>Hi Meera ❤️</h1>
+  <p>I made something special just for you</p>
+  <div class="hint">(tap anywhere)</div>
+</div>
+
+<script>
+  const screens = [
+    {
+      title: "Hi Meera ❤️",
+      text: "I made something special just for you"
+    },
+    {
+      title: "You mean a lot to me 💕",
+      text: "Every moment with you makes my life brighter"
+    },
+    {
+      title: "Just one thing…",
+      text: "No matter what happens, I choose you. Always."
+    },
+    {
+      title: "Happy Valentine’s Day ❤️",
+      text: "Forever yours"
+    }
+  ];
+
+  let index = 0;
+
+  function next() {
+    index++;
+    if (index >= screens.length) return;
+
+    const c = document.getElementById("content");
+    c.style.animation = "none";
+    c.offsetHeight; // reset animation
+    c.style.animation = "fade 0.6s ease";
+
+    c.innerHTML = `
+      <h1>${screens[index].title}</h1>
+      <p>${screens[index].text}</p>
+      <div class="hint">(tap anywhere)</div>
+    `;
+  }
+</script>
+
+</body>
+</html>
