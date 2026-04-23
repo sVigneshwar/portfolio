@@ -1,0 +1,125 @@
+Company logo for, Dojo.
+Dojo
+
+
+Senior Frontend Engineer 
+
+London Area, United Kingdom · Reposted 1 day ago · 74 people clicked apply
+
+Promoted by hirer · Responses managed off LinkedIn
+
+Hybrid
+Full-time
+Apply
+
+Save
+Your profile was shared with the job poster. Undo
+
+
+Did you finish applying?
+
+You'll find this job under In progress in your job tracker until you confirm.
+
+Yes
+
+No
+Your profile and resume are missing some required qualifications
+
+
+
+Show match details
+
+BETA • Is this information helpful?
+
+
+Get personalized tips to stand out to hirers
+
+Find jobs where you’re a top applicant and tailor your resume with the help of AI.
+
+Try Premium for ₹0
+
+People you can reach out to
+
+Company alumni from Zoho
+
+Show all
+About the job
+We’re reinventing payments.
+
+In less than four years, Dojo disrupted the market to become the largest and most loved acquirer in the UK. Our payments infrastructure, purpose-built for in-person commerce, is game changing.
+
+Now, over 150,000 customers across four countries choose to transact billions with us every year.
+
+But we’re just getting started.
+
+Our people are the driving force behind our success. They are our greatest investment and our ultimate competitive advantage. We hire exceptional people and give them the autonomy, trust, and ownership to thrive. The results take care of themselves.
+
+The Role...
+
+At Dojo, Customer Apps is all about building and scaling all the customer facing apps that help our customers run their businesses smoothly, now and in the future.
+
+Our goal is to transform the way our customers interact with our products, aiming to offer a way to streamline all of their processes into one application suite. Therefore, this is a role which sits in a team interfacing with most of the products that Dojo offers. The team is building a new home for Dojo's products. Where our customers can discover them and buy them. Think payment device management, transaction access, restaurant and reservations operations, loyalty schemes, and many more.
+
+We're therefore looking for a Senior Frontend Engineer who is passionate about their craft and excited to shape the future of many domains. You are eager to take an important role in designing and maintaining a robust and scalable infrastructure, able to support long-term feature development at an accelerated pace.
+
+What You Will Do...
+
+Technically design and develop new product features using modern front end technologies 
+Write high quality code that is well-tested and maintainable 
+Participate in code reviews, architectural discussions and team planning 
+Work with design and product to define user experience and technical requirements 
+Attend and participate in the Web Chapter, contributing to a collaborative web engineering culture at Dojo 
+Mentor and train junior colleagues in modern best practices. 
+
+What You Will Bring...
+
+5+ years of professional experience in frontend web development 
+Expert knowledge of React, TypeScript, Next.js 
+Deep understanding of modern frontend architecture (state management, component patterns, hooks, etc.) 
+Experience with web testing frameworks (e.g. Vitest, Jest, React Testing Library, Playwright, Cypress) 
+Experience with CSS-in-JS libraries (e.g. Vanilla Extract, Emotion, Styled Components) 
+Familiarity with CI/CD processes and version control (e.g. Git) 
+Experience contributing to a centralised Design System or component library (e.g. Storybook) 
+Knowledge of backend APIs (we use GraphQL) and how they integrate with frontend systems 
+Passion for product quality and user experience 
+Strong communication skills and the ability to work cross-functionally 
+
+Nice to have...
+
+An eye for visual design 
+Experience with Chromatic, a visual testing and review tool 
+Deep knowledge of web accessibility standards and best practices (e.g. WCAG and WAI-ARIA) 
+Exposure to analytics and user behaviour tracking 
+Experience with observability tools (e.g. Sentry, LogRocket) 
+
+Dojo home and away
+
+We believe our best work happens when we collaborate in-person. These “together days” foster communication, drive innovation and spark our brightest ideas.
+
+That's why we have an office-first culture. This means working from the office 4+ days per week.
+
+With offices across Europe, we know a thing or two about staying dynamic. Need deep focus? Head to a quiet zone. Big ideas? Collaboration spaces have you covered. Just here for a catch-up? Our social hubs make it easy. Do work that counts, in spaces made for you.
+
+Question: what’s curious, relentless, and customer obsessed?
+
+If you’re keen to know the answer, you’re a third of the way to meeting our Dojo values.
+
+If the following speak to you, let’s talk:
+
+You’re curious. You have a real desire to learn and create.
+You’re relentless. You keep going even when it’s easier not to. 
+You’re customer-obsessed. You know how important customers are to what you do. 
+
+Diversity, equity, and inclusion at Dojo
+
+From local bakeries to well-known eateries, Dojo payments serve over 150,000 places across the UK.
+
+And something that’s fundamental to creating relevant, innovative products at Dojo is to build teams to reflect the diversity of the businesses we serve.
+
+Our drive to improve diversity, equity, and inclusion is closely linked to helping employees thrive and innovating for better customer experiences.
+
+If you care about your work, you’re curious, and you think customer-first, you have a place at Dojo.
+
+To make sure you’re the best you can be throughout the recruitment process, let us know if you need any extra adjustments to help you thrive.
+
+Visit dojo.careers to find out more about our benefits and what it’s like to work at Dojo, or check out our LinkedIn and Instagram pages.
