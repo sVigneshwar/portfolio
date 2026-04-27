@@ -1,0 +1,12 @@
+Hi Hiring Team,w
+
+I’m writing to express my interest in the Frontend Engineer role at Helsing. The opportunity to work on impactful, mission-driven technology while contributing to complex, high-performance systems is particularly compelling to me.
+
+I currently work as a Frontend Engineer at Zoho, where I’ve spent the past several years building and scaling production applications with a strong focus on performance, usability, and maintainable architecture. I’ve owned frontend development for platforms like Japan CRM Academy, improving user conversion through performance optimisations and refined UX flows. My work also involves building reusable UI systems, collaborating closely with product and design teams, and contributing to engineering practices through code reviews and discussions.
+
+I’m particularly drawn to Helsing’s emphasis on ownership, engineering culture, and building reliable systems at scale. I enjoy working in environments where engineers contribute beyond implementation — from shaping user experience to influencing system design — and where there is a strong focus on continuous learning and collaboration.
+
+I’m currently based in India and open to relocation to the UK. I’d welcome the opportunity to contribute to Helsing’s mission and help build scalable, user-focused frontend systems.
+
+Best regards,
+Vigneshwar

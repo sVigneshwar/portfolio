@@ -1,20 +1,19 @@
-Company logo for, Dojo.
-Dojo
+Company logo for, JPMorganChase.
+JPMorganChase
 
 
-Senior Frontend Engineer 
+Senior Lead Software Engineer - React/JavaScript 
 
-London Area, United Kingdom · Reposted 1 day ago · 74 people clicked apply
+Greater London, England, United Kingdom · 1 day ago · 22 people clicked apply
 
 Promoted by hirer · Responses managed off LinkedIn
 
-Hybrid
+On-site
 Full-time
 Apply
 
 Save
 Your profile was shared with the job poster. Undo
-
 
 Did you finish applying?
 
@@ -23,7 +22,7 @@ You'll find this job under In progress in your job tracker until you confirm.
 Yes
 
 No
-Your profile and resume are missing some required qualifications
+Your profile and resume match some required qualifications
 
 
 
@@ -44,82 +43,47 @@ Company alumni from Zoho
 
 Show all
 About the job
-We’re reinventing payments.
+Job Description
 
-In less than four years, Dojo disrupted the market to become the largest and most loved acquirer in the UK. Our payments infrastructure, purpose-built for in-person commerce, is game changing.
+As a Software Engineer at JPMorgan Chase within F&O Execution Technology, you are an integral part of an agile team that works to enhance, build, and deliver trusted market-leading technology products in a secure, stable, and scalable way. We support the #1 ranked execution business, and you will be expected to drive significant business impact through your capabilities and contributions. You will need to apply deep technical expertise and problem-solving methodologies to tackle a diverse array of challenges that span multiple technologies and applications.
 
-Now, over 150,000 customers across four countries choose to transact billions with us every year.
+Working within a team of experienced technologists, you will participate in all aspects of e-trading development life cycle, from designing a scalable architecture to deployment with a focus on stability and performance.
 
-But we’re just getting started.
+Job Responsibilities
 
-Our people are the driving force behind our success. They are our greatest investment and our ultimate competitive advantage. We hire exceptional people and give them the autonomy, trust, and ownership to thrive. The results take care of themselves.
+Regularly provides technical guidance and direction to support the business and its technical teams, contractors, and vendors.
+Develops secure and high-quality production code, and reviews and debugs code written by others.
+Drives decisions that influence the product design, application functionality, and technical operations and processes.
+Serves as a function-wide subject matter expert in one or more areas of focus.
+Actively contributes to the engineering community as an advocate of firmwide frameworks, tools, and practices of the Software Development Life Cycle.
+Influences peers and project decision-makers to consider the use and application of leading-edge technologies.
+Adds to the team culture of diversity, opportunity, inclusion, and respect.
+Lead projects independently and provide guidance to other members of the team.
 
-The Role...
+Required Qualifications, Capabilities, And Skills
 
-At Dojo, Customer Apps is all about building and scaling all the customer facing apps that help our customers run their businesses smoothly, now and in the future.
+8+ years of experience in systems and technology, preferably with exposure to financial systems
+5+ years of experience coding in JavaScript / TypeScript
+React framework
+JEST & React testing libraries
+CSS styling
 
-Our goal is to transform the way our customers interact with our products, aiming to offer a way to streamline all of their processes into one application suite. Therefore, this is a role which sits in a team interfacing with most of the products that Dojo offers. The team is building a new home for Dojo's products. Where our customers can discover them and buy them. Think payment device management, transaction access, restaurant and reservations operations, loyalty schemes, and many more.
+Preferred Qualifications, Capabilities, And Skills
 
-We're therefore looking for a Senior Frontend Engineer who is passionate about their craft and excited to shape the future of many domains. You are eager to take an important role in designing and maintaining a robust and scalable infrastructure, able to support long-term feature development at an accelerated pace.
+Bachelor’s degree in STEM.
+Exposure to financial industry, Future & Options is a plus.
+FIX protocol and workflow understanding.
+Experience with one or more extra programming language(s).
+Webpack and Babel frameworks
+Material UI and JSS
+AG Grid
 
-What You Will Do...
+About Us
 
-Technically design and develop new product features using modern front end technologies 
-Write high quality code that is well-tested and maintainable 
-Participate in code reviews, architectural discussions and team planning 
-Work with design and product to define user experience and technical requirements 
-Attend and participate in the Web Chapter, contributing to a collaborative web engineering culture at Dojo 
-Mentor and train junior colleagues in modern best practices. 
+J.P. Morgan is a global leader in financial services, providing strategic advice and products to the world’s most prominent corporations, governments, wealthy individuals and institutional investors. Our first-class business in a first-class way approach to serving clients drives everything we do. We strive to build trusted, long-term partnerships to help our clients achieve their business objectives.
 
-What You Will Bring...
+We recognize that our people are our strength and the diverse talents they bring to our global workforce are directly linked to our success. We are an equal opportunity employer and place a high value on diversity and inclusion at our company. We do not discriminate on the basis of any protected attribute, including race, religion, color, national origin, gender, sexual orientation, gender identity, gender expression, age, marital or veteran status, pregnancy or disability, or any other basis protected under applicable law. We also make reasonable accommodations for applicants’ and employees’ religious practices and beliefs, as well as mental health or physical disability needs. Visit our FAQs for more information about requesting an accommodation.
 
-5+ years of professional experience in frontend web development 
-Expert knowledge of React, TypeScript, Next.js 
-Deep understanding of modern frontend architecture (state management, component patterns, hooks, etc.) 
-Experience with web testing frameworks (e.g. Vitest, Jest, React Testing Library, Playwright, Cypress) 
-Experience with CSS-in-JS libraries (e.g. Vanilla Extract, Emotion, Styled Components) 
-Familiarity with CI/CD processes and version control (e.g. Git) 
-Experience contributing to a centralised Design System or component library (e.g. Storybook) 
-Knowledge of backend APIs (we use GraphQL) and how they integrate with frontend systems 
-Passion for product quality and user experience 
-Strong communication skills and the ability to work cross-functionally 
+About The Team
 
-Nice to have...
-
-An eye for visual design 
-Experience with Chromatic, a visual testing and review tool 
-Deep knowledge of web accessibility standards and best practices (e.g. WCAG and WAI-ARIA) 
-Exposure to analytics and user behaviour tracking 
-Experience with observability tools (e.g. Sentry, LogRocket) 
-
-Dojo home and away
-
-We believe our best work happens when we collaborate in-person. These “together days” foster communication, drive innovation and spark our brightest ideas.
-
-That's why we have an office-first culture. This means working from the office 4+ days per week.
-
-With offices across Europe, we know a thing or two about staying dynamic. Need deep focus? Head to a quiet zone. Big ideas? Collaboration spaces have you covered. Just here for a catch-up? Our social hubs make it easy. Do work that counts, in spaces made for you.
-
-Question: what’s curious, relentless, and customer obsessed?
-
-If you’re keen to know the answer, you’re a third of the way to meeting our Dojo values.
-
-If the following speak to you, let’s talk:
-
-You’re curious. You have a real desire to learn and create.
-You’re relentless. You keep going even when it’s easier not to. 
-You’re customer-obsessed. You know how important customers are to what you do. 
-
-Diversity, equity, and inclusion at Dojo
-
-From local bakeries to well-known eateries, Dojo payments serve over 150,000 places across the UK.
-
-And something that’s fundamental to creating relevant, innovative products at Dojo is to build teams to reflect the diversity of the businesses we serve.
-
-Our drive to improve diversity, equity, and inclusion is closely linked to helping employees thrive and innovating for better customer experiences.
-
-If you care about your work, you’re curious, and you think customer-first, you have a place at Dojo.
-
-To make sure you’re the best you can be throughout the recruitment process, let us know if you need any extra adjustments to help you thrive.
-
-Visit dojo.careers to find out more about our benefits and what it’s like to work at Dojo, or check out our LinkedIn and Instagram pages.
+J.P. Morgan’s Commercial & Investment Bank is a global leader across banking, markets, securities services and payments. Corporations, governments and institutions throughout the world entrust us with their business in more than 100 countries. The Commercial & Investment Bank provides strategic advice, raises capital, manages risk and extends liquidity in markets around the world.
